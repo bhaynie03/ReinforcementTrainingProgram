@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/laravel', function () {
     return view('welcome');
 });
+
+
+
+Route::get('/', 'HomeController@landing')->name('home');
